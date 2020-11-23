@@ -34,6 +34,10 @@ body, html {
   height: 9.6rem;
 }
 
+.display_totals {
+  padding: 3rem 0 0 8rem;
+}
+
 .itemList {
   height: 50.8rem;
   width: 78rem;
