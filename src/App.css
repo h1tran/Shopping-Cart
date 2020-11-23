@@ -1,0 +1,42 @@
+body, html {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.header {
+  height: 8rem;
+  background-color: #f8f9fa;
+}
+
+.header_font {
+  font-weight: 600;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  padding-left: 8rem;
+  column-gap: 2rem;
+}
+
+.display_size {
+  height: 9.6rem;
+}
+
+.itemList {
+  height: 50.8rem;
+  width: 78rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
