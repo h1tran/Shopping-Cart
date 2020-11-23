@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Subtotal = props => {
-    var el = document.querySelectorAll('.item').length;
+const itemsAdded = props => {
     return (
-        <div className="center display_totals">
-            <h1 className="poppins header_font">{el} Items Added</h1>
+        <div className="display_totals">
+            <div className="button-layout right">
+                <button className="poppins item-layout" type="button">Add Item</button>
+                <button className="poppins item-layout" type="button">Subtotals</button>
+            </div>
         </div>
     )
 };
 
-export default Subtotal;
+export default itemsAdded;

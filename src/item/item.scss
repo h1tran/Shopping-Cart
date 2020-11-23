@@ -41,15 +41,19 @@ h1 {
     box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4)
 }
 
+.item-layout {
+    padding: 2rem 4rem !important;
+}
+
 .button-layout {
     padding: 0.6rem 0 0 0;
-    column-gap: 0.4rem !important;
+    column-gap: 0.5rem;
 
     button {
         padding: 0.2rem 0.8rem;
         font-size: 1.4rem;
         border: 0;
-        box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4)
+        box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4);
     }
 
     button:hover {
@@ -70,8 +74,9 @@ h1 {
 
     input[type=text] {
         outline: 0;
-        width:3rem;
+        width:2.4rem;
         text-align: center;
-        box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4)
+        box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4);
+        border: 0;
     }
 }

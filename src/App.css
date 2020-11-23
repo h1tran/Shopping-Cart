@@ -35,7 +35,7 @@ body, html {
 }
 
 .display_totals {
-  padding: 3rem 0 0 8rem;
+  padding: 3.6rem 0 2rem 8rem;
 }
 
 .itemList {
@@ -43,4 +43,10 @@ body, html {
   width: 78rem;
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  width: 70rem;
 }

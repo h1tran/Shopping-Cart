@@ -5,24 +5,28 @@ import image_404 from '../assets/images/image-not-found.jpg'
 
 export default function Item(props) {
     const {
-        itemNumber
+        itemNumber,
+        createName,
+        createDescription,
+        createQuantity,
+        createPrice,
     } = props;
 
-    const [itemQuantity, setItemQuantity] = useState(0);
-    const [itemPrice, setPrice] = useState(34.99);
+    const [itemQuantity, setItemQuantity] = useState(createQuantity);
+    const [itemPrice, setPrice] = useState(createPrice);
 
     return (
         <div id={itemNumber} className="center item item-border">
             <img src={image_404} alt="404, Resource not found" className="display_size" />
             <div className="description">
-                <h1 className="poppins header_font">Metor Tool</h1>
-                <h1 className="poppins description_font">Material used: Solid grey plastic</h1>
+                <h1 className="poppins header_font">{createName}</h1>
+                <h1 className="poppins description_font">{createDescription}</h1>
                 <div className="center button-layout">
                     <button type="button" onClick={() => {
                         if (itemQuantity > 0)
                             setItemQuantity(itemQuantity - 1);
                     }}>-</button>
-                    <input id={"input" + itemNumber} type="text" className="poppins description_font price_layout" defaultValue={'0'} value={itemQuantity} onInput={() => {
+                    <input id={"input" + itemNumber} type="text" className="poppins description_font price_layout" value={itemQuantity} onInput={() => {
                         if (isNaN(parseInt(document.getElementById("input" + props.itemNumber).value)))
                             setItemQuantity(0)
                         else
