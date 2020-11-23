@@ -67,4 +67,11 @@ h1 {
     button:focus {
         outline: 0;
     }
+
+    input[type=text] {
+        outline: 0;
+        width:3rem;
+        text-align: center;
+        box-shadow: 0 0 2px 0.2px rgba(0,0,0,0.4)
+    }
 }

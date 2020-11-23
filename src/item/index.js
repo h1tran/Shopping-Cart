@@ -22,7 +22,12 @@ export default function Item(props) {
                         if (itemQuantity > 0)
                             setItemQuantity(itemQuantity - 1);
                     }}>-</button>
-                    <h1 className="poppins description_font price_layout item-border">{itemQuantity}</h1>
+                    <input id={"input" + itemNumber} type="text" className="poppins description_font price_layout" defaultValue={'0'} value={itemQuantity} onInput={() => {
+                        if (isNaN(parseInt(document.getElementById("input" + props.itemNumber).value)))
+                            setItemQuantity(0)
+                        else
+                            setItemQuantity(parseInt(document.getElementById("input" + props.itemNumber).value));
+                    }}></input>
                     <button type="button" onClick={() => {
                         setItemQuantity(itemQuantity + 1);
                     }}>+</button>
