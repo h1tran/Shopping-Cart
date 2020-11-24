@@ -15,6 +15,7 @@ body, html {
 .header {
   height: 8rem;
   background-color: #f8f9fa;
+  padding-left: 8rem;
 }
 
 .header_font {
@@ -26,8 +27,24 @@ body, html {
   align-items: center;
   justify-content: left;
 
-  padding-left: 8rem;
   column-gap: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  width: 70rem;
+}
+
+.flex-row {
+  align-items: flex-start !important;
+  justify-content: left;
+  text-align: left;
 }
 
 .display_size {
@@ -45,8 +62,9 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.right {
-  display: flex;
-  justify-content: flex-end;
-  width: 70rem;
+.add_item {
+  width: 78rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  font-size: 1.4rem !important;
 }

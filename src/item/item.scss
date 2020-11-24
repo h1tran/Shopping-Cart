@@ -19,7 +19,7 @@ h1 {
     flex-direction: column;
     text-align: left;
     row-gap: 0.6rem;
-    width: 50%;
+    width: 72.5%;
 }
 
 .description_font {
@@ -32,7 +32,7 @@ h1 {
     text-align: right;
     vertical-align: top;
 
-    width: 50%;
+    width: 27.5%;
     padding-right: 1.4rem;
 }
 
@@ -42,7 +42,8 @@ h1 {
 }
 
 .item-layout {
-    padding: 2rem 4rem !important;
+    padding: 1.2rem 3rem !important;
+    font-size: 1.2rem !important;
 }
 
 .button-layout {
